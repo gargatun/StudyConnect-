@@ -1,0 +1,17 @@
+* {
+  font-family: "DM Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #fefffe;
+}
+
+.BookContainer {
+  padding-top: 8%;
+}
+
+/* .searchDiv {
+  transform: translateY(-2px);
+} */
