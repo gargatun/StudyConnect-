@@ -9,7 +9,7 @@ dotenv.config({ path: ".env" });
  */
 function MyMongoDB() {
   const myDB = {};
-  const url = process.env.MONGO_URI || "mongodb://localhost:27017";
+  const url = "mongodb://localhost:27017";
   const DB_NAME = "StudyConnect";
   const USER_COLLECTION = "пользователи";
   const TUTORS_COLLECTION = "репетиторы";
