@@ -6,7 +6,7 @@ import { validatePassword } from "./utils/passwordUtilites.js";
 // Amanda Au-Yeung
 // verify with local strategy in passport
 const strategy = new LocalStrategy(
-  { usernameField: "Почта", passwordField: "Пароль" },
+  { usernameField: "email", passwordField: "password" },
   async (email, password, cb) => {
     try {
       const res = await myDB.getUsers(email);
