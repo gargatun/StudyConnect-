@@ -155,7 +155,7 @@ function BookClass() {
     if (auth.user) {
       setModalIsOpen(!modalIsOpen);
     } else {
-      alert("Please sign in to book class");
+      alert("Пожалуйста, войдите в систему, чтобы забронировать занятие");
     }
   };
 
@@ -265,7 +265,7 @@ function BookClass() {
   const addClass = (date, time) => {
     try {
       if (bookClassMap.has(`${date} ${time}`)) {
-        alert("Schedule Conflict, please select a different time");
+        alert("Конфликт расписания, пожалуйста, выберите другое время");
       } else {
         const tempMap = new Map(bookClassMap);
         tempMap.set(`${date} ${time}`, {
@@ -279,7 +279,7 @@ function BookClass() {
       }
     } catch (err) {
       console.error(err);
-      alert(`There was an error ${err}`);
+      alert(`Произошла ошибка ${err}`);
     }
   };
 
@@ -302,7 +302,7 @@ function BookClass() {
   //when confirm button is clicked, classes are added to DB
   const confirmClasses = () => {
     addClassBackend(bookClassMap.values());
-    alert("Class Booked");
+    alert("Занятие забронировано");
     setModalIsOpen(!modalIsOpen);
   };
 

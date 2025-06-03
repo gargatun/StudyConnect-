@@ -89,7 +89,7 @@ function BookModal({
         </div>
         <div className="btnContainer">
           <button className="confirmBtn" onClick={() => confirmClasses()}>
-            Confirm Booking
+            Подтвердить бронирование
           </button>
         </div>
       </div>

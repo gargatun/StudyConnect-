@@ -13,7 +13,7 @@ function LoginPage() {
           <p className="quote">
           Войдите в систему, чтобы найти идеального репетитора!
           </p>
-          <img className="blackboard" src={blackboard} alt="A+" />
+          <img className="blackboard" src={blackboard} alt="Доска с оценкой A+" />
         </div>
         <div className="col">
           <Login />

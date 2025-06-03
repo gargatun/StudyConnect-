@@ -38,7 +38,7 @@ function AccountSetting() {
 
   const alertDel = (e) => {
     e.preventDefault();
-    if (confirm("Confirm to permanently cancel your account.")) {
+    if (confirm("Подтвердите окончательное удаление вашего аккаунта.")) {
       delAC();
     }
   };
@@ -55,7 +55,7 @@ function AccountSetting() {
 
   return (
     <div className="AccountSetting">
-      <h1 className="plan-selection">Select your plan</h1>
+      <h1 className="plan-selection">Выберите ваш план</h1>
       <div className="price-container">
         <PricePanel />
         <div className="select-plan">
@@ -65,7 +65,7 @@ function AccountSetting() {
               setClassCount(1 + classCount);
             }}
           >
-            ONE TIMER
+            РАЗОВОЕ ЗАНЯТИЕ
           </button>
           <button
             className="btnAccount"
@@ -73,7 +73,7 @@ function AccountSetting() {
               setClassCount(3 + classCount);
             }}
           >
-            BRUSH UP PLAN
+            БАЗОВЫЙ ПЛАН
           </button>
           <button
             className="btnAccount"
@@ -81,14 +81,14 @@ function AccountSetting() {
               setClassCount(5 + classCount);
             }}
           >
-            PRO PLAN
+            ПРОФЕССИОНАЛЬНЫЙ ПЛАН
           </button>
         </div>
         <div></div>
       </div>
       <div className="delete-account">
         <button className="delete-button" type="submit" onClick={alertDel}>
-          I would like to delete my account...
+          Я хочу удалить мой аккаунт...
         </button>
       </div>
     </div>

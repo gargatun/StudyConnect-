@@ -27,7 +27,7 @@ function App() {
           <Route
             path=":tutorId"
             element={
-              <React.Suspense fallback="Searching...">
+              <React.Suspense fallback="Поиск...">
                 <LazySearch2 />
               </React.Suspense>
             }
@@ -51,7 +51,7 @@ function App() {
         <Route
           path="/searchTutor"
           element={
-            <React.Suspense fallback="Searching...">
+            <React.Suspense fallback="Поиск...">
               <LazySearch />
             </React.Suspense>
           }

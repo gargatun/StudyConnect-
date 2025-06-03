@@ -55,7 +55,7 @@ function Login() {
         </Link>
       </div>
         <h2 className="card-title" id="signIn">
-          Зарегистрироваться
+          Войти
         </h2>
       <div className="log-reg-body">
         <form className="form-body" onSubmit={findUser}>
@@ -68,7 +68,7 @@ function Login() {
               className="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
-              placeholder="Enter your Email"
+              placeholder="Введите вашу электронную почту"
               value={user.email}
               onChange={onInputChange}
               name="email"
@@ -86,7 +86,7 @@ function Login() {
               type="password"
               className="form-control"
               id="exampleInputPassword1"
-              placeholder="Enter your password"
+              placeholder="Введите ваш пароль"
               value={user.password}
               onChange={onInputChange}
               name="password"
@@ -94,7 +94,7 @@ function Login() {
             />
           </div>
           <button type="submit" className="btn">
-            Ввести
+            Войти
           </button>
         </form>
       </div>

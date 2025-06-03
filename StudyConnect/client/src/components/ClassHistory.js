@@ -24,7 +24,7 @@ function ClassHistory() {
         })
         .then((data) => {
           if (data.user === null) {
-            alert("please login")
+            alert("пожалуйста, войдите в систему")
             navigate("/login");
           }
         });
@@ -86,16 +86,16 @@ function ClassHistory() {
             <div className="line1" key={`${i.date}_${idx}`}>
               <div className="scheduleDivHistory">
                 <p className="datep">
-                  <strong>Date :</strong> {i.date}
+                  <strong>Дата :</strong> {i.date}
                 </p>
                 <p className="timep">
-                  <strong>Time :</strong> {i.time}
+                  <strong>Время :</strong> {i.time}
                 </p>
                 <p className="tutorp">
-                  <strong>Tutor :</strong> {i.tutor}
+                  <strong>Репетитор :</strong> {i.tutor}
                 </p>
                 <p className="subjectp">
-                  <strong>Subject :</strong> {i.subject}
+                  <strong>Предмет :</strong> {i.subject}
                 </p>
                 <span className="commentBtnSpanHistory">
                   {renderCommentBtn(i)}

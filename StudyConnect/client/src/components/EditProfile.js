@@ -137,13 +137,13 @@ function EditProfile() {
           <div className="col-xl-4 no-padding">
             {/* <!-- Profile picture card--> */}
             <div className="mb-4 mb-xl-0" id="uploadProfileCard">
-              <div className="card-header">Profile Picture</div>
+              <div className="card-header">Фото профиля</div>
               <div className="card-body text-center">
                 {/* <!-- Profile picture image--> */}
                 <img
                   className="img-account-profile rounded-circle mb-2"
                   src={pic || bulb2}
-                  alt="Not Found"
+                  alt="Не найдено"
                 />
                 {/* <!-- Profile picture help block--> */}
                 <div className="small font-italic text-muted mb-4">
@@ -194,7 +194,7 @@ function EditProfile() {
                       className="form-control"
                       id="inputUsername"
                       type="text"
-                      placeholder="Enter your username"
+                      placeholder="Введите ваше имя пользователя"
                       name="username"
                       value={profile.username || ""}
                       onChange={onInputChange}
@@ -211,7 +211,7 @@ function EditProfile() {
                         className="form-control"
                         id="inputFirstName"
                         type="text"
-                        placeholder="Enter your first name"
+                        placeholder="Введите ваше имя"
                         name="fName"
                         value={profile.fName || ""}
                         onChange={onInputChange}
@@ -226,7 +226,7 @@ function EditProfile() {
                         className="form-control"
                         id="inputLastName"
                         type="text"
-                        placeholder="Enter your last name"
+                        placeholder="Введите вашу фамилию"
                         name="lName"
                         value={profile.lName || ""}
                         onChange={onInputChange}
@@ -241,7 +241,7 @@ function EditProfile() {
                       className="form-control"
                       id="inputEmailAddress"
                       type="email"
-                      placeholder="Enter your email address"
+                      placeholder="Введите ваш адрес электронной почты"
                       name="email"
                       value={profile.email || ""}
                       onChange={onInputChange}
@@ -259,7 +259,7 @@ function EditProfile() {
                         className="form-control"
                         id="inputSubjects"
                         type="text"
-                        placeholder="Subject"
+                        placeholder="Предмет"
                         name="subjects"
                         value={profile.subjects || ""}
                         onChange={onInputChange}
@@ -274,7 +274,7 @@ function EditProfile() {
                         className="form-control"
                         id="inputLocation"
                         type="text"
-                        placeholder="Enter your location"
+                        placeholder="Введите ваше местоположение"
                         name="location"
                         value={profile.location || ""}
                         onChange={onInputChange}

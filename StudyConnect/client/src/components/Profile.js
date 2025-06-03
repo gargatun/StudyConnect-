@@ -75,22 +75,22 @@ function Profile() {
           <div className="profileInnerDiv">
             <h2 className="userName">
               {profile.username
-                ? "Hi, " + profile.username
-                : "Welcome! Please proceed to edit your profile."}
+                ? "Привет, " + profile.username
+                : "Добро пожаловать! Пожалуйста, перейдите к редактированию вашего профиля."}
             </h2>
             <br></br>
             <div>
               <AiOutlineMail />{" "}
               {profile.email
                 ? profile.email
-                : "Add your email in your edit profile settings."}
+                : "Добавьте вашу электронную почту в настройках редактирования профиля."}
             </div>
             <br></br>
             <div>
               <FaRegCalendarCheck />{" "}
               {profile.preferredSchedule
-                ? "My preferred schedule is " + preferredSchedule.join(", ")
-                : "Please select your preferred schedule in Edit Profile"}
+                ? "Мое предпочтительное расписание " + preferredSchedule.join(", ")
+                : "Пожалуйста, выберите ваше предпочтительное расписание в Редактировании профиля"}
               .
             </div>
           </div>
@@ -98,7 +98,7 @@ function Profile() {
             <img
               className="img-account-profile"
               src={pic || bulb2}
-              alt="Not Found"
+              alt="Не найдено"
             />
             <div className="policy">
               <h5>Политика:</h5>

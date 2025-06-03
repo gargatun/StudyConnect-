@@ -84,10 +84,10 @@ function Navbar() {
       <nav id="mainNavbar" className={navClassName}>
         <div className="container-xl navContainer">
           <span className="logoSpan">
-            <img src={bulb2} className="logo" alt="tutor app logo" />
+            <img src={bulb2} className="logo" alt="логотип приложения репетиторов" />
           </span>
 
-          <div className="navbar-brand">Tutor Match</div>
+          <div className="navbar-brand">StudyConnect</div>
 
           <div className="collapse navbar-collapse" id="navLinks">
             <ul className="navbar-nav">

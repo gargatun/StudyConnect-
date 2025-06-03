@@ -44,7 +44,7 @@ function TutorInfo({ tutorProfile, returnToSearch, handleModal }) {
                 <img
                   className="imgs2"
                   src={tutorProfile.image}
-                  alt="image of tutorProfile"
+                  alt="изображение профиля репетитора"
                 />
                 <div className="card-text-div2">
                   <p className="card-text2">

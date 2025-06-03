@@ -50,7 +50,7 @@ function TutorProfile({ searchData, query, handleReturn, searchProfile }) {
 
   return (
     <div>
-      <h3 className="searchRes">Search Results for &quot;{query}&quot;</h3>
+      <h3 className="searchRes">Результаты поиска для &quot;{query}&quot;</h3>
       <div className="backDiv">
         <span className="back" onClick={handleClick}>
           <i className="fa-solid fa-arrow-left-long" /> Назад к поиску
@@ -77,7 +77,7 @@ function TutorProfile({ searchData, query, handleReturn, searchProfile }) {
                   <img
                     className="imgs"
                     src={tutorProfile.image}
-                    alt="image of tutor"
+                    alt="изображение репетитора"
                   />
                   <div className="card-text-div">
                     <p className="card-text">

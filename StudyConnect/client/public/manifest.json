@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "StudyConnect",
+  "name": "StudyConnect - Приложение для поиска репетиторов",
   "icons": [
     {
       "src": "favicon.ico",

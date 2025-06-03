@@ -53,7 +53,7 @@ function Register() {
     setError((prev) => {
       const obj = { ...prev, [name]: "" };
       if (user.password && value !== user.password) {
-        obj[name] = "The confirmed password does not match with the password";
+        obj[name] = "Подтвержденный пароль не совпадает с паролем";
       }
       return obj;
     });
@@ -73,7 +73,7 @@ function Register() {
       </Link>
     </div>
     <div className="signUp-title">
-    <h2 className="card-title" id="signUp">Войти</h2>
+    <h2 className="card-title" id="signUp">Зарегистрироваться</h2>
     </div>
       <div className="log-reg-body">
         <form className="form-body" onSubmit={createUser}>
@@ -86,7 +86,7 @@ function Register() {
               className="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
-              placeholder="Enter Email"
+              placeholder="Введите электронную почту"
               value={user.email}
               onChange={onInputChange}
               name="email"
@@ -103,7 +103,7 @@ function Register() {
               id="inputPassword5"
               className="form-control"
               aria-describedby="passwordHelpBlock"
-              placeholder="Enter your password"
+              placeholder="Введите ваш пароль"
               name="password"
               value={user.password}
               onChange={onInputChange}
@@ -117,7 +117,7 @@ function Register() {
               id="inputConfirmedPassword5"
               className="form-control"
               aria-describedby="passwordHelpBlock"
-              placeholder="Confirm your password"
+              placeholder="Подтвердите ваш пароль"
               name="confirmedPassword"
               value={user.confirmedPassword}
               onChange={onInputChange}
@@ -129,7 +129,7 @@ function Register() {
             )}
           </div>
           <button type="submit" className="btn">
-            Ввод
+            Зарегистрироваться
           </button>
         </form>
       </div>
